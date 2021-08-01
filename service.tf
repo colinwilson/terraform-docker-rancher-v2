@@ -4,7 +4,8 @@ resource "docker_service" "rancher2" {
 
   task_spec {
     container_spec {
-      image = "rancher/rancher:v2.4.8"
+      image = "rancher/rancher:v2.4.16"
+      #command = ["rancher"]
       args  = ["--no-cacerts"]
 
       labels {
